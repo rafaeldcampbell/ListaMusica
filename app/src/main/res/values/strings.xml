@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ListaMusica</string>
+    <string name="colunaNomeMusica">nome_musica</string>
+    <string name="colunaNomeAlbum">nome_album</string>
+    <string name="colunaNomeArtista">nome_artista</string>
+    <string name="nomeTabela">musicas</string>
+    <string name="criatabela">CREATE TABLE musicas (nome_musica TEXT, nome_album TEXT, nome_artista TEXT, PRIMARY KEY (nome_musica, nome_album))</string>
+</resources>
