@@ -3,5 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="corTexto">#dc0000</color>
+    <color name="corBotaoAtualizar">#56a742</color>
+    <color name="corBotaoDeletar">#b73739</color>
+    <color name="corTexto">#d92361</color>
+    <color name="corTextoEscuro">#888888</color>
+    <color name="corTextoBotao">#EFEFEF</color>
 </resources>

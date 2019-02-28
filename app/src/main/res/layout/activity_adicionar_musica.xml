@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdicionarMusica">
+
+    <!-- O elemento EditText com TextInputLayout permite criar uma caixa editável -->
+    <!-- onde a dica vira um texto acima da caixa, quando esta é ocupada -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/entrada_musica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/entrada_album"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <EditText
+            android:id="@+id/adicionar_musica_musica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título da música"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/entrada_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrada_musica"
+        app:layout_constraintBottom_toTopOf="@+id/entrada_artista"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/adicionar_musica_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título do álbum"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/entrada_artista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrada_album"
+        app:layout_constraintBottom_toTopOf="@+id/adicionar_musica_botao"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="100dp" >
+
+        <EditText
+            android:id="@+id/adicionar_musica_artista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome dos artistas" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/adicionar_musica_botao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:onClick="Adicionar"
+        android:background="@drawable/shape_botao_verde"
+        android:text="@string/textoBotaoAdicionar"
+        android:textColor="@color/corTextoBotao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/entrada_artista"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

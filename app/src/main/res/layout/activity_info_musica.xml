@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoMusica">
+
+    <!-- colocando um título e a informação, lado a lado -->
+    <LinearLayout
+        android:id="@+id/layoutMusica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layoutAlbum">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloMusica"
+            android:theme="@style/infoTitulo"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:id="@+id/infoMusica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/infoConteudo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/layoutMusica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layoutArtista">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloAlbum"
+            android:theme="@style/infoTitulo"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:id="@+id/infoAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/infoConteudo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutArtista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutAlbum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layoutBotao">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloArtista"
+            android:theme="@style/infoTitulo"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:id="@+id/infoArtista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/infoConteudo"/>
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutBotao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutArtista">
+
+        <Button
+            android:id="@+id/botao_deletar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_botao_vermelho"
+            android:onClick="Deletar"
+            android:text="@string/textoBotaoDeletar"
+            android:textSize="18sp"
+            android:textColor="@color/corTextoBotao"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/botao_atualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_botao_verde"
+            android:onClick="Atualizar"
+            android:textSize="18sp"
+            android:textColor="@color/corTextoBotao"
+            android:layout_marginRight="20dp"
+            android:text="@string/textoBotaoAtualizar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

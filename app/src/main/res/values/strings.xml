@@ -1,5 +1,24 @@
 <resources>
-    <string name="app_name">ListaMusica</string>
+    <string name="app_name">Lista de Musicas</string>
+
+    <string name="textoOrdenar">Ordenar por:</string>
+    <string name="textoBotaoDeletar">Deletar</string>
+    <string name="textoBotaoAtualizar">Atualizar</string>
+    <string name="textoBotaoCancelar">Cancelar</string>
+    <string name="textoBotaoAdicionar">Adicionar</string>
+
+    <string-array name="ordenar">
+        <item>Música</item>
+        <item>Álbum</item>
+        <item>Artista</item>
+    </string-array>
+
+    <string name="tituloMusica">Música:</string>
+    <string name="tituloAlbum">Álbum:</string>
+    <string name="tituloArtista">Artista:</string>
+
+    <!-- guarda todos os nomes da tabela e das colunas -->
+    <!-- é importante manter esses nomes no arquivo, para evitar erros -->
     <string name="colunaNomeMusica">nome_musica</string>
     <string name="colunaNomeAlbum">nome_album</string>
     <string name="colunaNomeArtista">nome_artista</string>

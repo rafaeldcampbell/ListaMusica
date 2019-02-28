@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AdicionarMusica" />
+        <activity android:name=".InfoMusica" />
+        <activity android:name=".AtualizarMusica"></activity>
     </application>
 
 </manifest>

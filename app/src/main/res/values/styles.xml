@@ -1,24 +1,41 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Estilo básico da aplicação, guarda informação sobre várias características básicas -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="infoTitulo">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/corTexto</item>
+    </style>
+
+    <style name="infoConteudo">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/corTextoEscuro</item>
+    </style>
+
+    <!-- estilo associado ao nome da música, descrito na View -->
     <style name="titulo">
-        <item name="android:textSize">45sp</item>
+        <item name="android:textSize">28sp</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textColor">@color/corTexto</item>
     </style>
 
+    <!-- estilo associado aos nomes do album e artistas, descritos na View -->
     <style name="complemento">
         <item name="android:textSize">25sp</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:paddingLeft">10dp</item>
         <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <!-- estilo associado ao spinner para ordenar a lista -->
+    <style name="spinner">
+        <item name="android:textSize">25sp</item>
     </style>
 
 </resources>

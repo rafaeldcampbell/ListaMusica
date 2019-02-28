@@ -1,26 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- esse será o layout usado em cada elemento de nossa RecyclerView -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/titulo"/>
+        android:theme="@style/titulo"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/album"/>
 
     <TextView
         android:id="@+id/album"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/complemento" />
+        android:theme="@style/complemento"
+        android:gravity="left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintBottom_toTopOf="@id/artista" />
 
     <TextView
         android:id="@+id/artista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/complemento" />
+        android:theme="@style/complemento"
+        android:gravity="left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/album"/>
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
