@@ -1,7 +1,7 @@
 ﻿# Lista de Musicas
 ### Projeto do grupo [**PET-Tele**](http://www.telecom.uff.br/pet/petws/index.php), curso de Engenharia de Telecomunicações
 
-Este projeto foi desenvolvido durante a aula piloto de apresentação do **Tutorial de Programação Android**, com os alunos do grupo. Para tornar mais aplicáveis os conceitos aprendidos durante a apresentação, foi construído o projeto do zero, visando apresentar formas de integrar os elementos conhecidos.
+Este projeto foi desenvolvido durante a aula piloto de apresentação do [**Tutorial de Programação Android**](http://www.telecom.uff.br/pet/petws/downloads/tutoriais/prog_android/Tutorial_programacao_android.pdf), com os alunos do grupo. Para tornar mais aplicáveis os conceitos aprendidos durante a apresentação, foi construído o projeto do zero, visando apresentar formas de integrar os elementos conhecidos.
 
 ### A aplicação
 
